@@ -654,7 +654,7 @@ button {
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .modal-button {
@@ -664,10 +664,17 @@ button {
   margin-right: 8px;
   padding: 0px;
 
+  background-color: #ffffff;
+
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+}
+
+ .modal-button:hover,
+ .modal-button:focus {
+  fill: var(--accent-color);
 }
 
 /* Overlay в Портфоліо */
@@ -790,6 +797,7 @@ button {
   text-decoration: underline;
   margin-left: 5px;
   color: var(--accent-color);
+  text-decoration-skip-ink: none;
 }
 
 
@@ -914,10 +922,12 @@ button {
 }  
 
 .subscribe-input {
+  width: 358px;
   padding: 16px 16px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: var(--footer-background-color);
+  color:  rgba(255, 255, 255, 0.6);
 }
 
 /* Кастомний checkbox */
